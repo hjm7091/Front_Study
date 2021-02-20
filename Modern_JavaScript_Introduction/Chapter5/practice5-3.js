@@ -1,0 +1,17 @@
+var msg = "Everything is practice.";
+console.log(msg.length);
+console.log(msg.charAt(3));
+console.log(msg.substring(7, 10));
+console.log(msg.slice(-3));
+console.log(msg.slice(-9, -6));
+console.log(msg.indexOf("i"));
+console.log(msg.indexOf("i", 10));
+console.log(msg.lastIndexOf("i"));
+console.log(msg.split(" "));
+console.log(msg.replace("p", "P"));
+console.log(msg.toUpperCase());
+console.log(msg.endsWith("."));
+console.log(msg.includes("is"));
+console.log(msg.charCodeAt(0));
+console.log(msg[3]);
+console.log(msg[msg.length-1]);

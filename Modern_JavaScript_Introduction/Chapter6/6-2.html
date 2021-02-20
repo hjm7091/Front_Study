@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시각을 콘솔에 표시하기</title>
+    <script>
+        function displayTime() {
+            var d = new Date();
+            console.log("현재 시각은 " + d.toLocaleString() + " 입니다.");
+        }
+        window.onload = function () {
+            var button = document.getElementById("button");
+            button.onclick = displayTime; 
+            // setInterval(function(){
+            //     console.log(new Date());
+            // }, 3000);
+            setTimeout(() => {
+                console.log(new Date());
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click" id="button">
+</body>
+</html>
