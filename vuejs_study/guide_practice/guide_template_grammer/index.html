@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="shortcut icon" href="/guide_practice/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+    <div id="app1">
+        <span>메시지: {{ msg }}</span><br>
+        <span v-once>다시는 변경하지 않습니다: {{msg}}</span>
+    </div>
+    <div id="app2">
+        <p>Using mustaches: {{ rawHtml }}</p>
+        <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+    </div>
+    <div id="watch-example">
+        <p>
+            yes/no 질문을 물어보세요:
+            <input v-model="question">
+        </p>
+        <p>{{ answer }}</p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
