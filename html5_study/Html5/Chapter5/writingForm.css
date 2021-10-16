@@ -1,0 +1,54 @@
+ul {
+    list-style-type: none;
+}
+
+#writing_form {
+    width: 450px;
+    margin: 30px 0 0 170px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: solid 1px #cccccc;
+    border-radius:15px;
+}
+
+#writing_form h3 {
+    margin: 10px 0 0 25px;
+}
+
+.cols li {
+    margin-top: 10px;
+}
+
+.cols li.col2 input {
+    width: 360px;
+    height: 20px;
+}
+
+.cols li.col2 textarea {
+    width: 360px;
+}
+
+.btns {
+    margin-left: 110px;
+}
+
+.btns li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btns input {
+    padding:4px 15px 4px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    border:1px solid #aaa;
+    outline: 0;
+    color:#333;
+    background-color:#feffff;
+    margin-left: 5px;
+}
+
+.btns input:hover {
+    text-decoration: underline;
+}

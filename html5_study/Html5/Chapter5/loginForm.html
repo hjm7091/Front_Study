@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        body {
+            font-family:"맑은고딕", "돋움";
+            color:444444;
+        }
+        #login_box {
+            width:320px;
+            height:120px;
+            border:solid 1px #bbbbbb;
+            border-radius:15px;
+            margin:10px 0 0 10px;
+            padding:15px 15px 15px 15px;
+        }
+        h3 {
+            font-family:"Arial";
+            margin-bottom:10px;
+        }
+        #login_box input {
+            width:190px;
+            height:18px;
+        }
+        #id_pass, #login_btn {
+            display: inline-block;
+            vertical-align: top; 
+        }
+        #id_pass span {
+            display: inline-block;
+            width:20px;
+            margin-right: 10px;
+        }
+        #pass {
+            margin-top:5px;
+        }
+        #login_btn button {
+            margin-left:5px;
+            padding:12px;
+            border-radius:5px;
+            cursor:pointer;
+            border:1px solid #aaa;
+            outline: 0;
+            color:#333;
+            background-color:#feffff;
+        }
+        #btns {
+            text-align: center;
+            margin:15px 30px 0 0;
+            text-decoration:underline;   
+        }
+        #btns li {
+            margin-left:10px;
+            display:inline;
+        }
+    </style>
+    <script>
+        function checkForm() {
+            const id = document.getElementById("id").value;
+            const pw = document.getElementById("pass").value;
+            console.log(id, pw);
+            if(id.length === 0 || id === null ||
+                pw.length === 0 || pw === null) {
+                    alert("아이디와 비밀번호를 입력하세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div id="login_box">
+            <h3>로그인</h3>
+            <ul id="input_button">
+              <li id="id_pass">
+                <ul>
+                  <li>
+                    <span>ID </span>
+                    <input type="text" id="id">
+                  </li> <!-- id -->
+                  <li>   
+                    <span>PW</span>
+                    <input type="password" id="pass">         
+                  </li> <!-- pass -->
+                </ul>
+              </li>
+              <li id="login_btn">
+                <button onclick="checkForm()">로그인</button>
+              </li>
+            </ul>   
+            <ul id="btns">
+              <li>회원 가입</li>
+              <li>아이디/비밀번호 찾기</li>
+            </ul>
+        </div> 
+    </form>
+</body>
+</html>
